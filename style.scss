@@ -1,0 +1,468 @@
+$gp-orange-50: #fff2e9;
+$gp-orange-100: #ffd6b9;
+$gp-orange-200: #ffc398;
+$gp-orange-300: #ffa768;
+$gp-orange-400: #ff964b;
+$gp-orange-500: #ff7c1e;
+$gp-orange-600: #e8711b;
+$gp-orange-700: #b55815;
+$gp-orange-800: #8c4411;
+$gp-orange-900: #6b340d;
+
+$gp-blue-50: #e7edf7;
+$gp-blue-100: #b5c6e7;
+$gp-blue-200: #91aadb;
+$gp-blue-300: #5f83cb;
+$gp-blue-400: #406bc1;
+$gp-blue-500: #1046b1;
+$gp-blue-600: #0f40a1;
+$gp-blue-700: #0b327e;
+$gp-blue-800: #092761;
+$gp-blue-900: #071d4a;
+
+$gp-grey-50: #f8f9fa;
+$gp-grey-100: #eaedf0;
+$gp-grey-200: #dfe4e9;
+$gp-grey-300: #d1d7df;
+$gp-grey-400: #c8d0d9;
+$gp-grey-500: #bac4cf;
+$gp-grey-600: #a9b2bc;
+$gp-grey-700: #848b93;
+$gp-grey-800: #666c72;
+$gp-grey-900: #4e5257;
+
+$gp-green: #9CFFB2;
+$gp-red: #FF5E5E;
+$gp-yellow: #FDE649;
+
+
+.scrolling-wrapper {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.scrolling-content {
+  display: flex;
+  white-space: nowrap;
+  animation: scroll-left 20s linear infinite;
+}
+
+@keyframes scroll-left {
+  from {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.item {
+  display: inline-block;
+  height: 100px;
+  background-color: lightblue;
+  /* Style as needed */
+  /* Style as needed */
+  margin-right: 20px;
+}
+
+#why-img{
+  max-width: 100%;
+}
+
+.rounded-img {
+  z-index: 1000;
+  position: absolute;
+  top: -60px;
+  left: calc(50% - 50px);
+  background-color: white;
+  border-radius: 50%;
+  ;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  height: 100px;
+  margin: 20px auto;
+  width: 100px;
+
+
+}
+
+.car-card {
+  border-radius: 10px;
+  box-shadow: 0.65rem 0.65rem 0 0 hsl(220,83%,35%);
+  border: black solid 5px;
+  text-align: center;
+  padding: 0px;
+
+  @media (max-width: 768px){
+    
+    .img {
+      border-radius: 6px 6px 0 0;
+      border-bottom: black solid 3px;
+    }
+
+    .car-content {
+      border-radius: 0 0 6px 6px;
+    }
+  }
+
+    @media (min-width: 769px) {
+      .img {
+        border-radius: 6px 0  0 6px;
+        border-right: black solid 10px;
+      }
+
+      .car-content {
+        border-radius: 0 6px 6px 0;
+      }
+    }
+  .img {
+     background-size: cover; 
+     background-position: center;
+    height: 300px;
+  }
+  .car-content {
+    background-color: hsl(197, 56%, 63%);
+    min-height: 200px;
+  }
+  h2 {
+    color: $gp-blue-500;
+  }
+  p {
+    max-width: 300px;
+    font-size: 14px;
+    font-weight: 200;
+  }
+  button {
+    background-color: #44a8d6;
+    border: none;
+    border-radius: 10px;
+    border: black solid 5px;
+    width: fit-content;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    &:hover {
+      background-color: $gp-orange-400;
+    }
+  }
+
+}
+
+.carousel-card{
+  margin: 50px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+ padding-top: 100px;
+  max-width: 300px;
+  text-align: center;
+  h2 {
+    color: $gp-blue-500;
+  }
+  p {
+    color: $gp-grey-700;
+  }
+  button {
+    background-color: $gp-blue-500;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    &:hover {
+      background-color: $gp-blue-400;
+    }
+  }
+
+
+}
+
+.card {
+  
+  background-color: $gp-grey-50;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px;
+  max-width: 300px;
+  text-align: center;
+  h2 {
+    color: $gp-blue-500;
+  }
+  p {
+    color: $gp-grey-700;
+  }
+  button {
+    background-color: $gp-blue-500;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    &:hover {
+      background-color: $gp-blue-400;
+    }
+  }
+
+}
+
+.quality-card {
+  background-color: $gp-grey-50;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  margin: 20px;
+  max-width: 300px;
+  text-align: center;
+  div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    img {
+      width: 50px;
+      height: 50px;
+      margin-right: 10px;
+    }
+    h3 {
+      color: $gp-blue-500;
+    }
+  }
+  h2 {
+    color: $gp-blue-500;
+  }
+  p {
+    color: $gp-grey-700;
+  }
+  button {
+    background-color: $gp-blue-500;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    &:hover {
+      background-color: $gp-blue-400;
+    }
+  }
+
+}
+
+
+#contact{
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 20rem;
+  position: relative;
+  #call-to-action{
+    z-index: 1000;
+    position: absolute;
+    top: calc(100% - 175px);
+    left: calc(50% - 508px);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+    background-color: $gp-blue-500;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 350px;
+    max-width: 1016px;
+    margin: 20px auto;
+    text-align: center;
+    h3 {
+      max-width: 582px;
+      color: white;
+    }
+    p {
+      max-width: 582px;
+      color: white;
+      margin-top: 3rem;
+    }
+    button {
+      background-color: $gp-orange-500;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      padding: 10px 20px;
+      margin-top: 10px;
+      cursor: pointer;
+      &:hover {
+        background-color: $gp-orange-400;
+      }
+    }
+  
+  }
+}
+
+footer {
+  padding-top: 20rem;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+$theme-colors: (
+  "gp-orange-50": $gp-orange-50,
+  "gp-orange-100": $gp-orange-100,
+  "gp-orange-200": $gp-orange-200,
+  "gp-orange-300": $gp-orange-300,
+  "gp-orange-400": $gp-orange-400,
+  "gp-orange-500": $gp-orange-500,
+  "gp-orange-600": $gp-orange-600,
+  "gp-orange-700": $gp-orange-700,
+  "gp-orange-800": $gp-orange-800,
+  "gp-orange-900": $gp-orange-900,
+
+  "gp-blue-50": $gp-blue-50,
+  "gp-blue-100": $gp-blue-100,
+  "gp-blue-200": $gp-blue-200,
+  "gp-blue-300": $gp-blue-300,
+  "gp-blue-400": $gp-blue-400,
+  "gp-blue-500": $gp-blue-500,
+  "gp-blue-600": $gp-blue-600,
+  "gp-blue-700": $gp-blue-700,
+  "gp-blue-800": $gp-blue-800,
+  "gp-blue-900": $gp-blue-900,
+
+  "gp-grey-50": $gp-grey-50,
+  "gp-grey-100": $gp-grey-100,
+  "gp-grey-200": $gp-grey-200,
+  "gp-grey-300": $gp-grey-300,
+  "gp-grey-400": $gp-grey-400,
+  "gp-grey-500": $gp-grey-500,
+  "gp-grey-600": $gp-grey-600,
+  "gp-grey-700": $gp-grey-700,
+  "gp-grey-800": $gp-grey-800,
+  "gp-grey-900": $gp-grey-900,
+
+  "gp-green": $gp-green,
+  "gp-red": $gp-red,
+  "gp-yellow": $gp-yellow
+);
+
+
+.bolder {
+  font-weight: bold;
+}
+
+.text-white {
+  color: white;
+}
+
+.text-blue-900 {
+  color: $gp-blue-900;
+} 
+
+.text-blue-500 {
+  color: $gp-blue-500;
+}
+
+.text-grey-700 {
+  color: $gp-grey-700;
+}
+
+.text-grey-500{
+  color: $gp-grey-500;
+}
+
+.text-grey-50{
+  color: $gp-grey-50;
+
+}
+
+.bg-orange-500 {
+  background-color: $gp-orange-500;
+}
+
+.bg-orange-400 {
+  background-color: $gp-orange-400;
+}
+
+.bg-orange-300 {
+  background-color: $gp-orange-300;
+}
+
+.bg-orange-200 {
+  background-color: $gp-orange-200;
+}
+
+.bg-orange-100 {
+  background-color: $gp-orange-100;
+}
+
+.bg-orange-50 {
+  background-color: $gp-orange-50;
+}
+
+.bg-blue-900 {
+  background-color: $gp-blue-900;
+}
+
+.bg-blue-500 {
+  background-color: $gp-blue-500;
+}
+
+.bg-blue-400 {
+  background-color: $gp-blue-400;
+}
+
+.bg-blue-300 {
+  background-color: $gp-blue-300;
+}
+
+.bg-blue-200 {
+  background-color: $gp-blue-200;
+}
+
+.bg-blue-100 {
+  background-color: $gp-blue-100;
+}
+
+.bg-blue-50 {
+  background-color: $gp-blue-50;
+}
+
+.bg-grey-500 {
+  background-color: $gp-grey-500;
+}
+
+.bg-grey-400 {
+  background-color: $gp-grey-400;
+}
+
+.bg-grey-300 {
+  background-color: $gp-grey-300;
+}
+
+.bg-grey-200 {
+  background-color: $gp-grey-200;
+}
+
+.bg-grey-100 {
+  background-color: $gp-grey-100;
+}
+
+.bg-grey-50 {
+  background-color: $gp-grey-50;
+}
