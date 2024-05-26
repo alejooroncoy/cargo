@@ -263,7 +263,7 @@ $gp-yellow: #FDE649;
     z-index: 1000;
     position: absolute;
     top: calc(100% - 175px);
-    left: calc(50% - 508px);
+    left: calc(50% - 40%);
 
     display: flex;
     flex-direction: column;
@@ -277,7 +277,7 @@ $gp-yellow: #FDE649;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     height: 350px;
-    max-width: 1016px;
+    max-width: calc(100% - 20%);
     margin: 20px auto;
     text-align: center;
     h3 {
