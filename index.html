@@ -1,587 +1,477 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="style.css" />
-  </head>
+<html lang="es">
 
-  <body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cargo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+</head>
+
+<body>
+  <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-xxl container-fluid">
         <a class="navbar-brand" href="#">CarGo</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
+              <a class="nav-link" href="#">Características</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled">Disabled</a>
+              <a class="nav-link" href="#">Precios</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
+  </header>
 
-    <div class="container-xxl container-fluid">
-      <!-- Hero -->
-      <div class="bg-orange-500 text-white row p-4">
-        <div class="col-md-6 col-12 d-flex flex-column justify-content-center">
+  <main class="container-fluid">
+    <!-- Hero -->
+    <section class="bg-orange-500 text-white row p-4">
+      <div class="container-xxl col-md-6 col-12 d-flex flex-column justify-content-center py-5 flex-md-row">
+        <article>
           <h1>Transporte de carga pesada</h1>
           <p>
             CarGo es una empresa de transporte de carga pesada que se enfoca en
             la eficiencia y seguridad de tus envíos.
           </p>
-          <button class="btn bg-white" style="max-width: fit-content">
-            Contactar
-          </button>
-        </div>
+          <div>
+            <button class="btn btn-light" style="max-width: fit-content">
+              Contactar
+            </button>
+            <a href="/demo/" class="btn btn-outline-light" style="text-decoration:none;max-width: fit-content">
+              Probar demo
+            </a>
+          </div>
+        </article>
         <div class="col-md-6 col-12">
           <img class="w-100" src="/images/truck_banner.svg" alt="placeholder" />
         </div>
       </div>
-      <!-- Nustros servicios -->
-      <div class="row p-5 bg-grey-50">
-        <div class="col-12">
-          <h3>Nustros servicios</h3>
-        </div>
-        <div class="col-md-4 col-12 d-flex justify-content-center">
-          <div class="card">
-            <img src="/images/truck.svg" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">Transporte de carga pesada</h5>
-              <p class="card-text">
-                Transportamos tu carga pesada de manera segura y eficiente.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 col-12 d-flex justify-content-center">
-          <div class="card">
-            <img src="/images/almacen.svg" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">Almacenamiento</h5>
-              <p class="card-text">
-                Contamos con almacenes seguros para guardar tu carga.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 col-12 d-flex justify-content-center">
-          <div class="card">
-            <img src="/images/empaque.svg" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">Empaque</h5>
-              <p class="card-text">
-                Empacamos tu carga de manera segura para su transporte.
-              </p>
-            </div>
+    </section>
+    <!-- Nustros servicios -->
+    <section class="container-xxl mx-auto row p-5 bg-grey-50">
+      <div class="col-12">
+        <h3>Nustros servicios</h3>
+      </div>
+      <div class="col-md-4 col-12 d-flex justify-content-center">
+        <div class="card">
+          <img src="/images/truck.svg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Transporte de carga pesada</h5>
+            <p class="card-text">
+              Transportamos tu carga pesada de manera segura y eficiente.
+            </p>
           </div>
         </div>
       </div>
-      <!-- Que tipo de unidad quieres  -->
-      <div class="row d-flex text-center justify-content-center p-5">
-        <div class="col-12">
-          <h3 class="text-blue-900">¿Que tipo de unidad quiere?</h3>
-          <p class="text-grey-700">
-            Tenemos múltiples unidades vehiculares para tu empresa dependiendo
-            del tipo carga.
-          </p>
-        </div>
-        <div class="col-md-6 col-12 my-4">
-          <div class="container-fluid row car-card">
-            <div
-              class="col-md-7 col-12 img"
-              style="background-image: url('/images/truck.jpeg')"
-            ></div>
-            <div
-              class="col-md-5 col-12 d-flex flex-column justify-content-center align-items-center car-content"
-            >
-              <h5>Camiones</h5>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
-                repellat magni ab impedit expedita?
-              </p>
-
-              <button class="btn bg-orange-500">Ver camiones</button>
-            </div>
+      <div class="col-md-4 col-12 d-flex justify-content-center">
+        <div class="card">
+          <img src="/images/almacen.svg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Almacenamiento</h5>
+            <p class="card-text">
+              Contamos con almacenes seguros para guardar tu carga.
+            </p>
           </div>
         </div>
-        <div class="col-md-6 col-12 my-4">
-          <div class="container-fluid row car-card">
-            <div
-              class="col-md-7 col-12 img"
-              style="background-image: url('/images/tracto.webp')"
-            ></div>
-            <div
-              class="col-md-5 col-12 d-flex flex-column justify-content-center align-items-center car-content"
-            >
-              <h5>Tractocamiones</h5>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
-                repellat magni ab impedit expedita?
-              </p>
-
-              <button class="btn bg-orange-500">Ver tractocamiones</button>
-            </div>
+      </div>
+      <div class="col-md-4 col-12 d-flex justify-content-center">
+        <div class="card">
+          <img src="/images/empaque.svg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Empaque</h5>
+            <p class="card-text">
+              Empacamos tu carga de manera segura para su transporte.
+            </p>
           </div>
         </div>
-        <div class="col-md-6 col-12 my-4">
-          <div class="container-fluid row car-card">
-            <div
-              class="col-md-7 col-12 img"
-              style="background-image: url('/images/truck.jpeg')"
-            ></div>
-            <div
-              class="col-md-5 col-12 d-flex flex-column justify-content-center align-items-center car-content"
-            >
-              <h5>Remolques</h5>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
-                repellat magni ab impedit expedita?
-              </p>
+      </div>
+    </section>
+    <!-- Que tipo de unidad quieres  -->
+    <section class="container-xxl mx-auto row d-flex text-center justify-content-center p-md-5 px-2 justify-content-center align-items-center">
+      <article class="col-12">
+        <h3 class="text-blue-900">¿Que tipo de unidad quiere?</h3>
+        <p class="text-grey-700">
+          Tenemos múltiples unidades vehiculares para tu empresa dependiendo
+          del tipo carga.
+        </p>
+      </article>
+      <article class="col-md-6 col-12 my-4 mx-auto ms-3 ms-md-0">
+        <div class="container-fluid row car-card">
+          <div class="col-md-7 col-12 img" style="background-image: url('/images/truck.jpeg')"></div>
+          <div class="col-md-5 col-12 d-flex flex-column justify-content-center align-items-center car-content">
+            <h5>Camiones</h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
+              repellat magni ab impedit expedita?
+            </p>
 
-              <button class="btn bg-orange-500">Ver remolques</button>
-            </div>
+            <button class="btn bg-orange-500">Ver camiones</button>
+          </div>
+        </div>
+      </article>
+      <article class="col-md-6 col-12 my-4 ms-3  ms-md-0">
+        <div class="container-fluid row car-card">
+          <div class="col-md-7 col-12 img" style="background-image: url('/images/tracto.webp')"></div>
+          <div class="col-md-5 col-12 d-flex flex-column justify-content-center align-items-center car-content">
+            <h5>Tractocamiones</h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
+              repellat magni ab impedit expedita?
+            </p>
+
+            <button class="btn bg-orange-500">Ver tractocamiones</button>
+          </div>
+        </div>
+      </article>
+      <article class="col-md-6 col-12 my-4 ms-3  ms-md-0">
+        <div class="container-fluid row car-card">
+          <div class="col-md-7 col-12 img" style="background-image: url('/images/truck.jpeg')"></div>
+          <div class="col-md-5 col-12 d-flex flex-column justify-content-center align-items-center car-content">
+            <h5>Remolques</h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
+              repellat magni ab impedit expedita?
+            </p>
+
+            <button class="btn bg-orange-500">Ver remolques</button>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- Calidad y Experiencia -->
+    <section class="container-xxl mx-auto row p-5 bg-orange-50">
+      <div class="col-md-6 col-12 d-flex flex-column align-items-center">
+        <h3 class="text-blue-900">Calidad y Experiencia</h3>
+
+        <div class="quality-card d-flex">
+          <img src="/images/Auto.svg" alt="" />
+          <div class="d-flex flex-column">
+            <h5>+ 140,00</h5>
+            <p>Vehiculos instalados</p>
+          </div>
+        </div>
+
+        <div class="quality-card d-flex">
+          <img src="/images/Card-soles.svg" alt="" />
+          <div class="d-flex flex-column">
+            <h5>50%</h5>
+            <p>De ahorro en sobretiempos</p>
+          </div>
+        </div>
+
+        <div class="quality-card d-flex">
+          <img src="/images/Person-experiencia.svg" alt="" />
+          <div class="d-flex flex-column">
+            <h5>97%</h5>
+            <p>De clientes satisfechos</p>
           </div>
         </div>
       </div>
 
-      <!-- Calidad y Experiencia -->
-      <div class="row p-5 bg-orange-50">
-        <div class="col-md-6 col-12 d-flex flex-column align-items-center">
-          <h3 class="text-blue-900">Calidad y Experiencia</h3>
+      <div class="col-md-6 col-12">
+        <img class="w-100" src="/images/calexp.svg" alt="" />
+      </div>
+    </section>
 
-          <div class="quality-card d-flex">
-            <img src="/images/Auto.svg" alt="" />
-            <div class="d-flex flex-column">
-              <h5>+ 140,00</h5>
-              <p>Vehiculos instalados</p>
-            </div>
+    <!-- Porque CarGo -->
+    <section class="container-xxl mx-auto row p-5">
+      <div class="col-12 d-flex flex-column align-items-center">
+        <p class="text-blue-500">BENEFICIOS</p>
+        <h3 class="text-blue-900 mb-5">¿Por qué elegir CarGo?</h3>
+      </div>
+      <div class="col-md-4 col-12">
+        <div class="mb-4">
+          <h4 class="text-blue-900 mb-4">Certificaciones y Licencias</h4>
+          <div class="d-flex">
+            <p class="text-blue-900 bg-blue-50 rounded-circle p-1"
+              style="height: 20px; width: 20px; font-size: xx-small">
+              ✔
+            </p>
+            <p class="mx-3">
+              Certificados por la ISO 9001 para garantizar calidad superior.
+            </p>
+          </div>
+          <div class="d-flex">
+            <p class="text-blue-900 bg-blue-50 rounded-circle p-1"
+              style="height: 20px; width: 20px; font-size: xx-small">
+              ✔
+            </p>
+            <p class="mx-3">
+              Operamos bajo estrictas normativas de seguridad, certificados
+              por la DOT.
+            </p>
           </div>
 
-          <div class="quality-card d-flex">
-            <img src="/images/Card-soles.svg" alt="" />
-            <div class="d-flex flex-column">
-              <h5>50%</h5>
-              <p>De ahorro en sobretiempos</p>
-            </div>
-          </div>
-
-          <div class="quality-card d-flex">
-            <img src="/images/Person-experiencia.svg" alt="" />
-            <div class="d-flex flex-column">
-              <h5>97%</h5>
-              <p>De clientes satisfechos</p>
-            </div>
+          <div class="d-flex">
+            <p class="text-blue-900 bg-blue-50 rounded-circle p-1"
+              style="height: 20px; width: 20px; font-size: xx-small">
+              ✔
+            </p>
+            <p class="mx-3">
+              Acreditados con certificaciones OSHA para el manejo seguro de
+              materiales.
+            </p>
           </div>
         </div>
 
-        <div class="col-md-6 col-12">
-          <img class="w-100" src="/images/calexp.svg" alt="" />
+        <div class="mb-4">
+          <h4 class="text-blue-900 mb-4">Compromiso con la Seguridad</h4>
+          <div class="d-flex">
+            <p class="text-blue-900 bg-blue-50 rounded-circle p-1"
+              style="height: 20px; width: 20px; font-size: xx-small">
+              ✔
+            </p>
+            <p class="mx-3">
+              Seguridad intransigente en cada paso del proceso.
+            </p>
+          </div>
+          <div class="d-flex">
+            <p class="text-blue-900 bg-blue-50 rounded-circle p-1"
+              style="height: 20px; width: 20px; font-size: xx-small">
+              ✔
+            </p>
+            <p class="mx-3">Cero incidentes reportados en el último año.</p>
+          </div>
+
+          <div class="d-flex">
+            <p class="text-blue-900 bg-blue-50 rounded-circle p-1"
+              style="height: 20px; width: 20px; font-size: xx-small">
+              ✔
+            </p>
+            <p class="mx-3">
+              Comprometidos con las prácticas más seguras del sector.
+            </p>
+          </div>
         </div>
       </div>
+      <div class="col-md-4 col-12">
+        <img id="why-img" src="/images/why.svg" alt="" />
+      </div>
+      <div class="col-md-4 col-12">
+        <div class="mb-4">
+          <h4 class="text-blue-900 mb-4">Tecnología Utilizada</h4>
+          <div class="d-flex">
+            <p class="text-blue-900 bg-blue-50 rounded-circle p-1"
+              style="height: 20px; width: 20px; font-size: xx-small">
+              ✔
+            </p>
+            <p class="mx-3">
+              Equipados con tecnología GPS para rastreo preciso en tiempo
+              real.
+            </p>
+          </div>
+          <div class="d-flex">
+            <p class="text-blue-900 bg-blue-50 rounded-circle p-1"
+              style="height: 20px; width: 20px; font-size: xx-small">
+              ✔
+            </p>
+            <p class="mx-3">
+              Uso de software de optimización de rutas para eficiencia máxima.
+            </p>
+          </div>
 
-      <!-- Porque CarGo -->
-      <div class="row p-5">
+          <div class="d-flex">
+            <p class="text-blue-900 bg-blue-50 rounded-circle p-1"
+              style="height: 20px; width: 20px; font-size: xx-small">
+              ✔
+            </p>
+            <p class="mx-3">
+              Vehículos con tecnología avanzada para el monitoreo de carga
+              constante.
+            </p>
+          </div>
+        </div>
+
+        <div class="mb-4">
+          <h4 class="text-blue-900 mb-4">Capacitación del Personal</h4>
+          <div class="d-flex">
+            <p class="text-blue-900 bg-blue-50 rounded-circle p-1"
+              style="height: 20px; width: 20px; font-size: xx-small">
+              ✔
+            </p>
+            <p class="mx-3">
+              Nuestro equipo recibe formación continua en logística moderna.
+            </p>
+          </div>
+          <div class="d-flex">
+            <p class="text-blue-900 bg-blue-50 rounded-circle p-1"
+              style="height: 20px; width: 20px; font-size: xx-small">
+              ✔
+            </p>
+            <p class="mx-3">
+              Personal altamente cualificado y regularmente capacitado.
+            </p>
+          </div>
+
+          <div class="d-flex">
+            <p class="text-blue-900 bg-blue-50 rounded-circle p-1"
+              style="height: 20px; width: 20px; font-size: xx-small">
+              ✔
+            </p>
+            <p class="mx-3">
+              Capacitación avanzada para garantizar el manejo seguro y
+              profesional.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonios -->
+    <section class="container-xxl mx-auto row p-5">
+      <div class="col-12 p-5 bg-grey-50 rounded-2">
         <div class="col-12 d-flex flex-column align-items-center">
-          <p class="text-blue-500">BENEFICIOS</p>
-          <h3 class="text-blue-900 mb-5">¿Por qué elegir CarGo?</h3>
-        </div>
-        <div class="col-md-4 col-12">
-          <div class="mb-4">
-            <h4 class="text-blue-900 mb-4">Certificaciones y Licencias</h4>
-            <div class="d-flex">
-              <p
-                class="text-blue-900 bg-blue-50 rounded-circle p-1"
-                style="height: 20px; width: 20px; font-size: xx-small"
-              >
-                ✔
-              </p>
-              <p class="mx-3">
-                Certificados por la ISO 9001 para garantizar calidad superior.
-              </p>
-            </div>
-            <div class="d-flex">
-              <p
-                class="text-blue-900 bg-blue-50 rounded-circle p-1"
-                style="height: 20px; width: 20px; font-size: xx-small"
-              >
-                ✔
-              </p>
-              <p class="mx-3">
-                Operamos bajo estrictas normativas de seguridad, certificados
-                por la DOT.
-              </p>
-            </div>
+          <p class="text-blue-500">CASOS DE EXITO</p>
+          <h3 class="text-blue-900">Testimonios</h3>
 
-            <div class="d-flex">
-              <p
-                class="text-blue-900 bg-blue-50 rounded-circle p-1"
-                style="height: 20px; width: 20px; font-size: xx-small"
-              >
-                ✔
-              </p>
-              <p class="mx-3">
-                Acreditados con certificaciones OSHA para el manejo seguro de
-                materiales.
-              </p>
-            </div>
-          </div>
-
-          <div class="mb-4">
-            <h4 class="text-blue-900 mb-4">Compromiso con la Seguridad</h4>
-            <div class="d-flex">
-              <p
-                class="text-blue-900 bg-blue-50 rounded-circle p-1"
-                style="height: 20px; width: 20px; font-size: xx-small"
-              >
-                ✔
-              </p>
-              <p class="mx-3">
-                Seguridad intransigente en cada paso del proceso.
-              </p>
-            </div>
-            <div class="d-flex">
-              <p
-                class="text-blue-900 bg-blue-50 rounded-circle p-1"
-                style="height: 20px; width: 20px; font-size: xx-small"
-              >
-                ✔
-              </p>
-              <p class="mx-3">Cero incidentes reportados en el último año.</p>
-            </div>
-
-            <div class="d-flex">
-              <p
-                class="text-blue-900 bg-blue-50 rounded-circle p-1"
-                style="height: 20px; width: 20px; font-size: xx-small"
-              >
-                ✔
-              </p>
-              <p class="mx-3">
-                Comprometidos con las prácticas más seguras del sector.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 col-12">
-          <img id="why-img" src="/images/why.svg" alt="" />
-        </div>
-        <div class="col-md-4 col-12">
-          <div class="mb-4">
-            <h4 class="text-blue-900 mb-4">Tecnología Utilizada</h4>
-            <div class="d-flex">
-              <p
-                class="text-blue-900 bg-blue-50 rounded-circle p-1"
-                style="height: 20px; width: 20px; font-size: xx-small"
-              >
-                ✔
-              </p>
-              <p class="mx-3">
-                Equipados con tecnología GPS para rastreo preciso en tiempo
-                real.
-              </p>
-            </div>
-            <div class="d-flex">
-              <p
-                class="text-blue-900 bg-blue-50 rounded-circle p-1"
-                style="height: 20px; width: 20px; font-size: xx-small"
-              >
-                ✔
-              </p>
-              <p class="mx-3">
-                Uso de software de optimización de rutas para eficiencia máxima.
-              </p>
-            </div>
-
-            <div class="d-flex">
-              <p
-                class="text-blue-900 bg-blue-50 rounded-circle p-1"
-                style="height: 20px; width: 20px; font-size: xx-small"
-              >
-                ✔
-              </p>
-              <p class="mx-3">
-                Vehículos con tecnología avanzada para el monitoreo de carga
-                constante.
-              </p>
-            </div>
-          </div>
-
-          <div class="mb-4">
-            <h4 class="text-blue-900 mb-4">Capacitación del Personal</h4>
-            <div class="d-flex">
-              <p
-                class="text-blue-900 bg-blue-50 rounded-circle p-1"
-                style="height: 20px; width: 20px; font-size: xx-small"
-              >
-                ✔
-              </p>
-              <p class="mx-3">
-                Nuestro equipo recibe formación continua en logística moderna.
-              </p>
-            </div>
-            <div class="d-flex">
-              <p
-                class="text-blue-900 bg-blue-50 rounded-circle p-1"
-                style="height: 20px; width: 20px; font-size: xx-small"
-              >
-                ✔
-              </p>
-              <p class="mx-3">
-                Personal altamente cualificado y regularmente capacitado.
-              </p>
-            </div>
-
-            <div class="d-flex">
-              <p
-                class="text-blue-900 bg-blue-50 rounded-circle p-1"
-                style="height: 20px; width: 20px; font-size: xx-small"
-              >
-                ✔
-              </p>
-              <p class="mx-3">
-                Capacitación avanzada para garantizar el manejo seguro y
-                profesional.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Testimonios -->
-      <div class="row p-5">
-        <div class="col-12 p-5 bg-grey-50 rounded-2">
-          <div class="col-12 d-flex flex-column align-items-center">
-            <p class="text-blue-500">CASOS DE EXITO</p>
-            <h3 class="text-blue-900">Testimonios</h3>
-
-            <div
-              id="carouselExampleAutoplaying"
-              class="mt-5 carousel carousel-fade w-100"
-              data-bs-ride="carousel"
-            >
-              <div class="carousel-inner d-flex justify-content-center">
-                <div class="carousel-item carousel-card active">
-                  <img
-                    src="/images/tom.png"
-                    class="d-block rounded-img"
-                    alt="..."
-                  />
-                  <div>
-                    <h5>Tom</h5>
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Eaque repellat magni ab impedit expedita? Fuga debitis
-                      molestiae voluptas non pariatur id. Dolore saepe libero
-                      incidunt numquam impedit assumenda vel adipisci.
-                    </p>
-                  </div>
+          <div id="carouselExampleAutoplaying" class="mt-5 carousel carousel-fade w-100" data-bs-ride="carousel">
+            <div class="carousel-inner d-flex justify-content-center">
+              <article class="carousel-item carousel-card active">
+                <img src="/images/tom.png" class="d-block rounded-img" alt="..." />
+                <div>
+                  <h5>Tom</h5>
+                  <p>
+                    Implementar la automatización de carga de Cargo ha revolucionado nuestra logística. Hemos reducido tiempos y errores, aumentando la eficiencia y seguridad. Recomiendo Cargo sin dudarlo.
+                  </p>
                 </div>
-                <div class="carousel-item carousel-card">
-                  <img
-                    src="/images/jerry.png"
-                    class="d-block rounded-img"
-                    alt="..."
-                  />
-                  <div>
-                    <h5>Jerry</h5>
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Eaque repellat magni ab impedit expedita? Fuga debitis
-                      molestiae voluptas non pariatur id. Dolore saepe libero
-                      incidunt numquam impedit assumenda vel adipisci.
-                    </p>
-                  </div>
-                </div>
-                <div class="carousel-item carousel-card">
-                  <img
-                    src="/images/bugs.png"
-                    class="d-block rounded-img"
-                    alt="..."
-                  />
-                  <div>
-                    <h5>Bugs Bunny</h5>
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Eaque repellat magni ab impedit expedita? Fuga debitis
-                      molestiae voluptas non pariatur id. Dolore saepe libero
-                      incidunt numquam impedit assumenda vel adipisci.
-                    </p>
-                  </div>
+              </article>
+              <div class="carousel-item carousel-card">
+                <img src="/images/jerry.png" class="d-block rounded-img" alt="..." />
+                <div>
+                  <h5>Jerry</h5>
+                  <p>
+                    La automatización de Cargo mejoró nuestra eficiencia y redujo errores significativamente. Un cambio total en nuestra logística.
+                  </p>
                 </div>
               </div>
-              <button
-                class="carousel-control-prev"
-                type="button"
-                data-bs-target="#carouselExampleAutoplaying"
-                data-bs-slide="prev"
-              >
-                <span
-                  class="carousel-control-prev-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button
-                class="carousel-control-next"
-                type="button"
-                data-bs-target="#carouselExampleAutoplaying"
-                data-bs-slide="next"
-              >
-                <span
-                  class="carousel-control-next-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Next</span>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Confian en nostros -->
-      <div class="scrolling-wrapper mb-5">
-        <div class="scrolling-content" id="scrollingContent">
-          <img class="item" src="/images/redondos.svg" alt="" />
-          <img class="item" src="/images/cemento_sol.svg" alt="" />
-          <img class="item" src="/images/samsung.svg" alt="" />
-          <img class="item" src="/images/ottokunz.svg" alt="" />
-          <!-- Add as many items as you like -->
-        </div>
-      </div>
-
-      <!-- Contacto -->
-      <div id="contact" class="row px-5 pt-5 bg-grey-50">
-        <div class="col-12">
-          <h3 class="text-blue-900">Contacto</h3>
-        </div>
-        <div class="col-md-6 col-12">
-          <form>
-            <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label text-blue-500"
-                >Correo electronico</label
-              >
-              <input
-                type="email"
-                class="form-control"
-                id="exampleInputEmail1"
-                aria-describedby="emailHelp"
-              />
-              <div id="emailHelp" class="form-text text-grey-500">
-                Nunca compartiremos tu correo con nadie.
+              <div class="carousel-item carousel-card">
+                <img src="/images/bugs.png" class="d-block rounded-img" alt="..." />
+                <div>
+                  <h5>Bugs Bunny</h5>
+                  <p>
+                    Con Cargo, nuestros tiempos de carga se redujeron drásticamente. La eficiencia y precisión han mejorado notablemente.
+                  </p>
+                </div>
               </div>
             </div>
-            <div class="mb-3">
-              <label
-                for="exampleInputPassword1"
-                class="form-label text-blue-500"
-                >Mensaje</label
-              >
-              <textarea
-                class="form-control"
-                id="exampleFormControlTextarea1"
-                rows="3"
-              ></textarea>
-            </div>
-            <button type="submit" class="btn bg-orange-500 text-white">
-              Enviar
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
             </button>
-          </form>
-        </div>
-        <div class="col-md-6 col-12">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.073013073073!2d-99.1333666851436!3d19.43260778689268!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff6d16b4e6e7%3A0x7e1b1f1b1b4b8b1b!2sPalacio%20de%20Bellas%20Artes!5e0!3m2!1ses-419!2smx!4v1635636820003!5m2!1ses-419!2smx"
-            width="100%"
-            height="100%"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-          ></iframe>
-        </div>
-
-        <div
-          id="call-to-action"
-          class=""
-          style="background-image: url(/images/call_to_action.svg)"
-        >
-          <h3 class="text-white">
-            ¿Listo para maximizar la eficiencia de tus envíos y reducir costos?
-          </h3>
-          <p class="text-white">
-            Únete a la revolución del transporte con nuestra solución de
-            delivery de cargas pesadas. ¡Regístrate ahora y obtén un 20% de
-            descuento en tu primer envío!
-          </p>
-          <button class="btn bg-orange-500 text-white">Registrate</button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
         </div>
       </div>
+    </section>
 
-      <!-- Footer -->
-      <footer class="row bg-blue-900 text-white px-5 pb-5">
-        <div class="col-12 col-md-3">
-          <p class="bolder">Contacto</p>
-          <p>(+51) 123 456 789</p>
-          <p>info@cargo.net</p>
-        </div>
+    <!-- Confian en nostros -->
+    <section class="container-xxl mx-auto scrolling-wrapper mb-5">
+      <div class="scrolling-content" id="scrollingContent">
+        <img class="item" src="/images/redondos.svg" alt="" />
+        <img class="item" src="/images/cemento_sol.svg" alt="" />
+        <img class="item" src="/images/samsung.svg" alt="" />
+        <img class="item" src="/images/ottokunz.svg" alt="" />
+        <!-- Add as many items as you like -->
+      </div>
+    </section>
 
-        <div class="col-12 col-md-3">
-          <p class="bolder">Redes sociales</p>
-          <p>Facebook</p>
-          <p>Instagram</p>
-          <p>Twitter</p>
-        </div>
+    <!-- Contacto -->
+    <section id="contact" class="container-xxl mx-auto row px-5 pt-5 bg-grey-50">
+      <div class="col-12">
+        <h3 class="text-blue-900">Contacto</h3>
+      </div>
+      <div class="col-md-6 col-12">
+        <form>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label text-blue-500">Correo electronico</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
+            <div id="emailHelp" class="form-text text-grey-500">
+              Nunca compartiremos tu correo con nadie.
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label text-blue-500">Mensaje</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+          <button type="submit" class="btn bg-orange-500 text-white">
+            Enviar
+          </button>
+        </form>
+      </div>
+      <div class="col-md-6 col-12">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.073013073073!2d-99.1333666851436!3d19.43260778689268!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff6d16b4e6e7%3A0x7e1b1f1b1b4b8b1b!2sPalacio%20de%20Bellas%20Artes!5e0!3m2!1ses-419!2smx!4v1635636820003!5m2!1ses-419!2smx"
+          width="100%" height="100%" style="border: 0" allowfullscreen="" loading="lazy"></iframe>
+      </div>
 
-        <div class="col-12 col-md-3">
-          <p class="bolder">Vehiculos</p>
-          <p>Camiones</p>
-          <p>Tractocamiones</p>
-          <p>Remolques</p>
-          <p></p>
-        </div>
+      <div id="call-to-action" class="" style="background-image: url(/images/call_to_action.svg)">
+        <h3 class="text-white">
+          ¿Listo para maximizar la eficiencia de tus envíos y reducir costos?
+        </h3>
+        <p class="text-white">
+          Únete a la revolución del transporte con nuestra solución de
+          delivery de cargas pesadas. ¡Regístrate ahora y obtén un 20% de
+          descuento en tu primer envío!
+        </p>
+        <button class="btn bg-orange-500 text-white">Registrate</button>
+      </div>
+    </section>
 
-        <div class="col-12 col-md-3">
-          <h3 class="bolder">CarGo</h3>
-          <p>
-            Somos una empresa de transporte de carga pesada que se enfoca en la
-            eficiencia y seguridad de tus envíos.
-          </p>
-
-          <p>© 2024 CarGo</p>
-        </div>
-      </footer>
+    <!-- Footer -->
+  </main>
+  <footer class="row mx-0 bg-blue-900 text-white px-5 pb-5">
+    <div class="col-12 col-md-3">
+      <p class="bolder">Contacto</p>
+      <p>(+51) 123 456 789</p>
+      <p>info@cargo.net</p>
     </div>
-  </body>
 
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"
-  ></script>
-  <script src="/index.js"></script>
+    <div class="col-12 col-md-3">
+      <p class="bolder">Redes sociales</p>
+      <p>Facebook</p>
+      <p>Instagram</p>
+      <p>Twitter</p>
+    </div>
+
+    <div class="col-12 col-md-3">
+      <p class="bolder">Vehiculos</p>
+      <p>Camiones</p>
+      <p>Tractocamiones</p>
+      <p>Remolques</p>
+    </div>
+
+    <div class="col-12 col-md-3">
+      <h3 class="bolder">CarGo</h3>
+      <p>
+        Somos una empresa de transporte de carga pesada que se enfoca en la
+        eficiencia y seguridad de tus envíos.
+      </p>
+
+      <p>© 2024 CarGo</p>
+    </div>
+  </footer>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script type="module" src="./src/landing.js"></script>
+
 </html>
