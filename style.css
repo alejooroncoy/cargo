@@ -7,16 +7,24 @@
 }
 
 .nav--open {
-  @apply max-w-10;
+  @apply max-w-10 p-0;
 
   & #menuArrow {
-    @apply rotate-180;
+    @apply rotate-180 mx-[0.73rem];
     & + div {
       & svg:nth-child(1) {
         @apply -translate-x-10 opacity-0;
       }
       & svg:nth-child(2) {
-        @apply opacity-100 w-auto;
+        @apply -translate-x-10 opacity-100;
+      }
+    }
+    & ~ ul {
+      @apply items-start pl-24;
+      & li {
+        & a span {
+          @apply opacity-0;
+        }
       }
     }
   }
